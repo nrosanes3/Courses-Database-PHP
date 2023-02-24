@@ -1,0 +1,463 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+/****************** Typography ******************/
+
+header h1 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header h1 a:hover,
+header h1 a:active {
+    color: #fbdd38;
+}
+
+h2 {
+    margin: 5rem 0 2rem;
+    color: #093f93;
+}
+
+h3 {
+    color: #093f93;
+    margin: 0 0 1rem;
+}
+
+p {
+    line-height: 2.7rem;
+    margin: 0 0 2.5rem;
+}
+
+/****************** Error Message ******************/
+div.message {
+    text-align: center;
+    color: #d8212f;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+div.message p {
+    margin: 0;
+}
+
+/****************** Header ******************/
+
+header {
+    background-color: #093f93;
+}
+
+header .inner-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.hamburger {
+    width: 5rem;
+    padding: 0.25rem;
+    background-color: #00a0df;
+    border: none;
+    border-radius: 5px;
+}
+
+.hamburger svg {
+    fill: #fff;
+}
+
+.hamburger:hover,
+.hamburger:active {
+    background-color: #0487bb;
+    cursor: pointer;
+}
+
+header nav {
+    position: absolute;
+    top: 7.3rem;
+    width: 100vw;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.7s ease-in-out;
+    background-color: #00a0df;
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+}
+
+.show {
+    max-height: 40rem;
+    border-bottom: 3px solid #2c3e5b;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    
+}
+
+nav ul li {
+    line-height: 4rem;
+    width: 100%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+}
+
+nav ul li a:active,
+nav ul li a:hover {
+    background-color: #093f93;
+}
+
+/****************** Main ******************/
+
+main {
+    padding: 1rem;
+}
+
+/************ Home ************/
+body.home main > div > div{
+    margin-bottom: 3rem;
+}
+
+div.random-div a {
+    color: #00a0df;
+}
+
+/************ List, Edit, Delete, & Admin Lists ************/
+
+body.list main ul,
+body.edit main div ul,
+body.delete main div ul,
+body.admin main div ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+body.list main ul li,
+body.edit main ul li,
+body.delete main ul li {
+    border: 1px solid #093f93;
+}
+
+body.list main ul li:nth-child(odd) a,
+body.edit main ul li:nth-child(odd) a,
+body.delete main ul li:nth-child(odd) a {
+    padding: 2rem;
+    display: block;
+    color: #fff;
+    background-color: #00a0df;
+    text-decoration: none;
+}
+
+body.list main ul li a:hover,
+body.list main ul li a:active,
+body.edit main ul li a:hover,
+body.edit main ul li a:active {
+    background-color: #fbdd38;
+    color: #2c3e5b;
+}
+
+body.delete main ul li a:hover,
+body.delete main ul li a:active {
+    background-color: #d8212f;
+    color: #fff !important;
+}
+
+body.list main ul li:nth-child(even) a,
+body.edit main ul li:nth-child(even) a,
+body.delete main ul li:nth-child(even) a {
+    color: #2c3e5b;
+    padding: 2rem;
+    display: block;
+    text-decoration: none;
+}
+
+/************ Search, Insert, Delete, Login Form ************/
+body.search form,
+body.login form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body.search form label,
+body.insert form label,
+div.edit-fields form label,
+body.login form label {
+    padding-right: 1rem;
+    width: 100%;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+body.search input,
+body.insert input,
+body.insert textarea,
+div.edit-fields input,
+div.edit-fields textarea,
+body.login input {
+    height: 4.8rem;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    border: 1px solid #2c3e5b;
+}
+
+body.search input[type=text] {
+    margin-bottom: 0.5rem;
+}
+
+body.search input[type=submit],
+body.insert input[type=submit],
+div.edit-fields input[type=submit],
+body.login input[type=submit] {
+    font-size: 2rem;
+    background-color: #00a0df;
+    color: #fff;
+    border:none;
+}
+
+body.search input[type=submit]:hover,
+body.search input[type=submit]:active,
+body.insert input[type=submit]:hover,
+body.insert input[type=submit]:active,
+div.edit-fields input[type=submit]:hover,
+div.edit-fields input[type=submit]:active,
+body.login input[type=submit]:hover,
+body.login input[type=submit]:active {
+    background-color: #fbdd38;
+    color: #093f93;
+    cursor: pointer;
+}
+
+/******* Insert Courses *******/
+
+body.insert form > * {
+    display: block;
+}
+
+body.insert textarea,
+div.edit-fields textarea {
+    height: 10rem;
+}
+
+/************ Edit Courses ************/
+
+div.edit-fields {
+    margin: 0rem 0 1rem;
+    padding-top: 1rem;
+}
+
+/************ Admin ************/
+body.admin main ul li {
+    margin: 1rem 0;
+}
+
+body.admin main ul li a {
+    padding: 2rem;
+    display: block;
+    color: #093f93;
+    background-color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+}
+
+body.admin main ul li a:hover,
+body.admin main ul li a:active {
+    border: 3px solid #093f93;
+    font-weight: bold;
+}
+
+body.admin main ul li:first-of-type a {
+    background-color: #00a0df;
+    color: #fff;
+}
+
+body.admin main ul li:nth-of-type(2) a {
+    background-color: #fbdd38;
+    color: #093f93;
+}
+
+body.admin main ul li:last-of-type a {
+    background-color: #d8212f;
+    color: #fff;
+}
+
+/****************** Footer ******************/
+
+footer {
+    padding: 1rem;
+    background-color: rgb(204, 203, 203);
+}
+
+@media screen and (min-width: 420px) {
+    body.search form {
+        width: 400px ;
+        margin: 0 auto 3rem;
+    }
+
+    body.insert form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    body.insert form > div {
+        display: flex;
+        width: 100%;
+    }
+
+    body.insert form > div > label {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+
+    body.insert textarea {
+        height: 15rem;
+    }
+
+    body.insert input[type=submit] {
+        width: 30rem;
+    }
+
+    body.admin main ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    body.admin main ul li {
+        flex: 1 1 auto;
+        display: unset;
+
+    }
+}
+
+@media screen and (min-width: 550px) {
+    body.insert form,
+    body.login form {
+       width: 540px;
+       margin: 0 auto;
+    }
+
+    body.edit main {
+        display: grid;
+        grid-template-columns: 3fr 2fr ;
+        gap: 2rem;
+    }
+
+    body.edit main > div:first-of-type {
+        grid-column: 1 / span 1;
+    }
+
+    body.login form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body.login form label {
+        width: 20%;
+        padding: 0;
+        margin: 0 0 2rem;
+    }
+
+    body.login form input {
+        width: 70%;
+        padding: 0;
+        margin: 0 0 2rem;
+    }
+
+    body.login form input[type=submit] {
+        width: 49%;
+    }
+
+}
+
+@media screen and (min-width: 620px) {
+    body.admin main ul {
+        width: 50rem;
+    }
+
+    body.admin main > div {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+@media screen and (min-width: 700px) {
+    header > div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    header nav {
+        position: static;
+        max-height: 40rem;
+        overflow: visible;
+    }
+
+    nav ul {
+        padding: 1rem;
+        justify-content: flex-end;
+        background-color: #093f93;
+        
+    }
+
+    nav ul li {
+        line-height: 4rem;
+        width: unset;
+        margin: 0 1rem;
+    }
+
+    nav ul li a:active,
+    nav ul li a:hover {
+    color: #fbdd38;
+    }
+
+    div.edit-fields textarea {
+        height: 30rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main,
+    header > div,
+    footer > div,
+    body.edit main {
+        width: 1150px;
+        margin: 0 auto;
+    }
+}
